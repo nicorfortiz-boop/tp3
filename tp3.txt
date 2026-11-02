@@ -1,0 +1,28 @@
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\WINDOWS\System32> $limite = [int](Read-Host "Introduce un número límite")
+Introduce un número límite: 10
+PS C:\WINDOWS\System32>
+PS C:\WINDOWS\System32> for ($numero = 1; $numero -le $limite; $numero++) {
+>>     $hora = Get-Date -Format "dd/MM/yyyy HH:mm:ss"
+>>
+>>     if ($numero % 2 -eq 0) {
+>>         Write-Host "[$hora] $numero es par."
+>>     }
+>>     else {
+>>         Write-Host "[$hora] $numero es impar."
+>>     }
+>> }
+[02/11/2026 19:28:29] 1 es impar.
+[02/11/2026 19:28:29] 2 es par.
+[02/11/2026 19:28:29] 3 es impar.
+[02/11/2026 19:28:29] 4 es par.
+[02/11/2026 19:28:29] 5 es impar.
+[02/11/2026 19:28:29] 6 es par.
+[02/11/2026 19:28:29] 7 es impar.
+[02/11/2026 19:28:29] 8 es par.
+[02/11/2026 19:28:29] 9 es impar.
+[02/11/2026 19:28:29] 10 es par.
+PS C:\WINDOWS\System32>
